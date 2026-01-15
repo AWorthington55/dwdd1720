@@ -66,3 +66,26 @@ section.ash div{
 h2{
     font-size: 1rem;
 }
+
+div.projects{
+    padding: 1rem 2%;
+}
+
+div.projects a{
+    display: block;
+    padding: .8rem;
+    margin-bottom: .5rem;
+    border: 2px solid #ff8943;
+    border-radius: 10px;
+    background-color: #a40e4a;
+    color: #40E0D0;
+}
+
+div.projects a.hover{
+
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}
