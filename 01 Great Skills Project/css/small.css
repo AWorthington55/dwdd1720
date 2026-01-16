@@ -75,14 +75,16 @@ div.projects a{
     display: block;
     padding: .8rem;
     margin-bottom: .5rem;
-    border: 2px solid #ff8943;
+    border: 2px solid #40E0D0;
     border-radius: 10px;
-    background-color: #a40e4a;
-    color: #40E0D0;
+    background-color: #81fbef;
+    color: #17a193;
+    text-decoration: none;
 }
 
-div.projects a.hover{
-
+div.projects a:hover{
+    background-color: #05bfac;
+    color: white;
 }
 
 footer {
