@@ -4,3 +4,42 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+nav{
+    position: sticky;
+    top: 0;
+    background-color: green;
+}
+
+nav ul{
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+nav a{
+    padding: .7rem .5rem;
+    display: block;
+    text-decoration: none;
+    color: blue;
+}
+
+nav a:hover{
+    background-color: purple;
+    color: pink;
+}
+
+section#about{
+    background-color: red;
+    height: 100vh;
+}
+
+section#projects{
+    background-color: orange;
+    height: 100vh;
+}
+
+section#contact{
+    background-color: yellow;
+    height: 100vh;
+}
