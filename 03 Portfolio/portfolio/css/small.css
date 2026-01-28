@@ -87,4 +87,41 @@ div.myProject a{
 section#contact{
     background-color: yellow;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#contact h2{
+    text-align: center;
+    color: red;
+}
+
+section#contact ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+section#contact li{
+
+}
+
+section#contact a{
+    text-decoration: none;
+    color: blue;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+section#contact a img{
+    height: 50px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+section#contact a:hover{
+    text-decoration: underline;
+    transform: translateY(15px);
 }
