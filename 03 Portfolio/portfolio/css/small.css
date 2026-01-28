@@ -4,6 +4,10 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+:root{
+    scroll-behavior: smooth;
+}
+
 nav{
     position: sticky;
     top: 0;
@@ -104,7 +108,7 @@ section#contact ul{
 }
 
 section#contact li{
-
+  color: pink;
 }
 
 section#contact a{
@@ -124,4 +128,12 @@ section#contact a img{
 section#contact a:hover{
     text-decoration: underline;
     transform: translateY(15px);
+}
+
+footer{
+    background-color: brown;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    padding: 1rem 
 }
