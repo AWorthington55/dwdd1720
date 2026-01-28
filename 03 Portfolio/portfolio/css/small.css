@@ -57,7 +57,31 @@ section#about h2{
 
 section#projects{
     background-color: orange;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+section#projects h2{
+    text-align: center;
+}
+
+section#projects figure{
+    margin: 0;
+    width: 100%;
+}
+
+section#projects img{
+    width: 100%;
+}
+/**make projects look nice later**/
+div.myProject{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.myProject a{
+    flex-basis: 100%;
+    padding: 1rem 2vh;
 }
 
 section#contact{

@@ -6,5 +6,9 @@
 section#about h2{
     font-size: 3.2rem;
 }
+
+div.myProject a{
+    flex-basis: 50%;
+}
     
 } /* end media query*/
