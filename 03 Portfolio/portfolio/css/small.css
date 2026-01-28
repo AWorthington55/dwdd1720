@@ -34,12 +34,25 @@ body {
     font-family: "Red Hat Display", sans-serif;
     --regularText: 300;
     --boldText: 700;
-    --mainColor: #111;
+    --mainColor: #088cff;
 }
 
 section#about{
     background-color: var(--mainColor);
     height: 100vh;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#about h1{
+    font-size: 2.8rem;
+}
+
+section#about h2{
+    font-size: 2.2rem;
 }
 
 section#projects{
