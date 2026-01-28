@@ -22,6 +22,7 @@ nav a{
     display: block;
     text-decoration: none;
     color: blue;
+    font-weight: var(--boldText);
 }
 
 nav a:hover{
@@ -29,8 +30,15 @@ nav a:hover{
     color: pink;
 }
 
+body {
+    font-family: "Red Hat Display", sans-serif;
+    --regularText: 300;
+    --boldText: 700;
+    --mainColor: #111;
+}
+
 section#about{
-    background-color: red;
+    background-color: var(--mainColor);
     height: 100vh;
 }
 
