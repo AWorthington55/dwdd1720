@@ -1,0 +1,1 @@
+document.querySelector('#math').addEventListener('click', () => {console.log('Oscar Piastri')})
