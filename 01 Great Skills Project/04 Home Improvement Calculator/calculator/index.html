@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <title>Home Improvement Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -17,9 +24,9 @@
     </header>
     <main>
         <div class="form">
-            <label>Room Width <input type="number" id="width" value="55"> feet</label>
-            <label>Room Depth <input type="number" id="depth" value="81"> feet</label>
-            <label>Wall Height <input type="number" id="height" value="87"> feet</label>
+            <label>Room Width <input type="number" id="width" value="0"> feet</label>
+            <label>Room Depth <input type="number" id="depth" value="0"> feet</label>
+            <label>Wall Height <input type="number" id="height" value="0"> feet</label>
             Paint Quality<select id="quality">
                 <option value="" disabled selected>Select an option below..</option>
                 <option value="600">Premium</option>
@@ -40,10 +47,8 @@
         </section>
     </main>
     <footer>
-        <p>&copy; Oscar Piastri &bull; 2026</p>
+        <p>&copy; Ashlynn Worthington &bull; 2026</p>
     </footer>
-
-
     <script src="js/scripts.js"></script>
 </body>
 </html>

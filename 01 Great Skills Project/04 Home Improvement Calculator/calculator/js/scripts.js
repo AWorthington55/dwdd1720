@@ -1,4 +1,6 @@
 document.querySelector('#math').addEventListener('click', () => {
+    document.querySelector('#paint').innerHTML = "";
+    document.querySelector('#carpet').innerHTML = "";
     const width = document.querySelector('#width').value;
     console.log(width);
     const depth = document.querySelector('#depth').value;
