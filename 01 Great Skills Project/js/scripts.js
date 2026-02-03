@@ -1,1 +1,1 @@
-console.log("I am connected");
+document.querySelector('#math').addEventListener('click', () => {console.log('Oscar Piastri')})
