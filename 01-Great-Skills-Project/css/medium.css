@@ -1,0 +1,16 @@
+@media only screen and (min-width: 35rem) {
+    header h1{
+        font-size: 2rem;
+    }
+    section.about{
+        font-size: 1.6rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .projects{
+        column-count: 2;
+    }
+    
+} /* end media query*/
