@@ -1,0 +1,168 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+:root{
+    scroll-behavior: smooth;
+    --colorOne: #ad6df3;
+    --colorTwo: #F6E27F;
+    --colorThree: #FF6666;
+    --colorFour: #80FFE8;
+    --textColor: #311E10;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: var(--colorThree);
+    padding: 12px;
+    font-size: 1.2rem;
+}
+
+nav ul{
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+nav a{
+    padding: .7rem .5rem;
+    display: block;
+    text-decoration: none;
+    color: var(--textColor);
+    font-weight: var(--boldText);
+}
+
+nav a:hover{
+    background-color: var(--colorTwo);
+    color: var(--colorThree);
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    --regularText: 300;
+    --boldText: 700;
+}
+
+section#about{
+    background-color: var(--colorFour);
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--textColor);
+}
+
+section#about h1{
+    font-size: 2.8rem;
+}
+
+section#about h2{
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+section#projects{
+    background-color: var(--colorOne);
+    min-height: 100vh;
+    padding: 50px;
+    color: var(--textColor);
+}
+
+section#projects h2{
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+section#projects figure{
+    margin: 0;
+    width: 100%;
+    background-color: #614633;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section#projects img{
+    width: 100%;
+}
+
+div.myProjects{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.myProjects a{
+    flex-basis: 100%;
+    padding: 1rem 2vh;
+    text-decoration: none;
+    color: var(--colorFour);
+}
+
+div.myProjects a:hover{
+    color: var(--colorThree);
+}
+
+section#projects figure:hover{
+    background-color: var(--colorFour);
+}
+
+section figcaption{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+section#contact{
+    background-color: var(--colorTwo);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#contact h2{
+    text-align: center;
+    color: var(--textColor);
+    font-size: 2.6rem;
+    margin: 0 0 8rem 0;
+}
+
+section#contact ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+section#contact a{
+    text-decoration: none;
+    color: var(--colorOne);
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+section#contact a img{
+    height: 50px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+section#contact a:hover{
+    text-decoration: underline;
+    transform: translateY(15px);
+    color: var(--colorThree);
+}
+
+footer{
+    background-color: var(--textColor);
+    height: 20vh;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    padding: 1rem 
+}
