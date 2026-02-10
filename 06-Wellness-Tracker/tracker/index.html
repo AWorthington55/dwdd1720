@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wellness Tracker</title>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -12,8 +12,69 @@
 
 </head>
 <body>
-    
+    <h1>F1 Driver Standings 2025</h1>
+    <div id="firstProfile">
+        <p>Fill out the information below</p>
+        <form>
+            <label>First name: <input type="text" name="first"required></label>
+            <label>Last name: <input type="text" name="last"required></label>
+            <label>Team:
+                <select id="team">
+                    <option value="mclaren">Mclaren</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="redbull">Red Bull Racing</option>
+                    <option value="ferrari">Ferrari</option>
+                    <option value="williams">Williams</option>
+                    <option value="rb">Racing Bulls</option>
+                    <option value="astonmartin">Aston Martin</option>
+                    <option value="haas">Haas</option>
+                    <option value="kicksauber">Kick Sauber</option>
+                    <option value="alpine">Alpine</option>
+                </select>
+            </label>
+            <label>Driver:
+                <select id="driver">
+                    <option value="https://openmoji.org/data/color/svg/1F947.svg">Lando Norris</option>
+                    <option value="https://openmoji.org/data/color/svg/1F949.svg">Oscar Piastri</option>
+                    <option value="https://openmoji.org/data/color/svg/1F3C1.svg">George Russell</option>
+                    <option value="https://openmoji.org/data/color/svg/1F3C1.svg">Kimi Antonelli</option>
+                    <option value="https://openmoji.org/data/color/svg/1F948.svg">Max Verstappen</option>
+                    <option value="https://openmoji.org/data/color/svg/E14A.svg">Yuki Tsunoda</option>
+                    <option value="https://openmoji.org/data/color/svg/1F3C1.svg">Charles Leclerc</option>
+                    <option value="https://openmoji.org/data/color/svg/1F3C1.svg">Lewis Hamilton</option>
+                    <option value="https://openmoji.org/data/color/svg/1F3C1.svg">Alex Albon</option>
+                    <option value="https://openmoji.org/data/color/svg/1F3C1.svg">Carlos Sainz</option>
+                    <option value="https://openmoji.org/data/color/svg/E14A.svg">Isack Hadjar</option>
+                    <option value="https://openmoji.org/data/color/svg/E14A.svg">Liam Lawson</option>
+                    <option value="https://openmoji.org/data/color/svg/1F3C1.svg">Fernando Alonso</option>
+                    <option value="https://openmoji.org/data/color/svg/E14A.svg">Lance Stroll</option>
+                    <option value="https://openmoji.org/data/color/svg/E14A.svg">Ollie Bearman</option>
+                    <option value="https://openmoji.org/data/color/svg/E14A.svg">Esteban Ocon</option>
+                    <option value="https://openmoji.org/data/color/svg/E14A.svg">Nico Hulkenberg</option>
+                    <option value="https://openmoji.org/data/color/svg/E14A.svg">Gabriel Bortoleto</option>
+                    <option value="https://openmoji.org/data/color/svg/E14A.svg">Pierre Gasly</option>
+                    <option value="https://openmoji.org/data/color/svg/E14A.svg">Franco Colapinto</option>
+                    <option value="https://openmoji.org/data/color/svg/E14A.svg">Jack Doohan</option>
+                </select>
+            </label>
+            <input type="submit" value="Find my Driver" id="findDriver">
+        </form>
+    </div>
 
+    <div id="driverProfile">
+        <section>
+            <img src="" id="icon">
+            <p><span id="first">First Name</span> <span id="last">Last Name</span> has found driver information for <span id="driver">Oscar Piastri</span></p>
+            <ul>
+                <li>Name: <span id="driver">Oscar Piastri</span></li>
+                <li>Country: <span id="country">Austrailia</span></li>
+                <li>Team: <span id="team">Mclaren</span></li>
+                <li>Driver Number: <span id="number">81</span></li>
+            </ul>
+            <p><span id="driver">Oscar Piastri</span> finished <span id="position">third</span> in 2025 with <span id="points">410</span> points.</p>
+        </section>
+        <button id="newDriver">Find a new driver</button>
+    </div>
 
     <script src="js/scripts.js"></script>
 </body>
