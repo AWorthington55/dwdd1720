@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wellness Tracker</title>
+    <title>Find a F1 Driver</title>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -15,25 +15,12 @@
     <h1>F1 Driver Standings 2025</h1>
     <div id="firstProfile">
         <p>Fill out the information below</p>
-        <form>
+        <form id="driverForm">
             <label>First name: <input type="text" name="first"required></label>
             <label>Last name: <input type="text" name="last"required></label>
-            <label>Team:
-                <select id="team">
-                    <option value="mclaren">Mclaren</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="redbull">Red Bull Racing</option>
-                    <option value="ferrari">Ferrari</option>
-                    <option value="williams">Williams</option>
-                    <option value="rb">Racing Bulls</option>
-                    <option value="astonmartin">Aston Martin</option>
-                    <option value="haas">Haas</option>
-                    <option value="kicksauber">Kick Sauber</option>
-                    <option value="alpine">Alpine</option>
-                </select>
-            </label>
             <label>Driver:
-                <select id="driver">
+                <select id="driverSelect">
+                    <option value="" disabled selected>Choose a driver</option>
                     <option value="https://openmoji.org/data/color/svg/1F947.svg">Lando Norris</option>
                     <option value="https://openmoji.org/data/color/svg/1F949.svg">Oscar Piastri</option>
                     <option value="https://openmoji.org/data/color/svg/1F3C1.svg">George Russell</option>
@@ -57,21 +44,21 @@
                     <option value="https://openmoji.org/data/color/svg/E14A.svg">Jack Doohan</option>
                 </select>
             </label>
-            <input type="submit" value="Find my Driver" id="findDriver">
+            <button type="submit" id="findDriver">Find my driver</button>
         </form>
     </div>
 
-    <div id="driverProfile">
+    <div id="nextProfile">
         <section>
             <img src="" id="icon">
-            <p><span id="first">First Name</span> <span id="last">Last Name</span> has found driver information for <span id="driver">Oscar Piastri</span></p>
+            <p><span id="first">First Name</span> <span id="last">Last Name</span> has found information for <span id="driver">driver</span></p>
             <ul>
-                <li>Name: <span id="driver">Oscar Piastri</span></li>
-                <li>Country: <span id="country">Austrailia</span></li>
-                <li>Team: <span id="team">Mclaren</span></li>
-                <li>Driver Number: <span id="number">81</span></li>
+                <li>Name: <span id="driverList">Driver</span></li>
+                <li>Country: <span id="country">Country</span></li>
+                <li>Team: <span id="team">Team</span></li>
+                <li>Driver Number: <span id="number">Number</span></li>
             </ul>
-            <p><span id="driver">Oscar Piastri</span> finished <span id="position">third</span> in 2025 with <span id="points">410</span> points.</p>
+            <p><span id="driverData">Driver</span> finished <span id="position">position</span> in 2025 with <span id="points">points</span> points.</p>
         </section>
         <button id="newDriver">Find a new driver</button>
     </div>
