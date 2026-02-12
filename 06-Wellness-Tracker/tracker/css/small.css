@@ -4,9 +4,16 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-label{
-    display: block;
+:root{
+    font-family: "Chakra Petch", sans-serif;
+    --colorOne: #ff6060;
+    --colorTwo: #12130F;
+    --colorThree: #00D9C0;
+    --colorFour: #F72626;
+    --colorFive: #FFFFFF;
 }
+
+/*switches for pages*/
 
 .hideDriver {
     display: none;
@@ -15,3 +22,92 @@ label{
 .showDriver {
     display: block;
 }
+
+/*new driver styling*/
+
+h1 {
+    color: var(--colorFour);
+    padding: 5px;
+    font-size: 1.8rem;
+}
+
+#firstProfile{
+    margin: auto;
+    padding: 20px;
+    background-color: var(--colorOne);
+    border: 3px solid var(--colorThree);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#firstProfile label{
+    display: block;
+    font-size: 1.4rem;
+    margin: 10px;
+}
+
+#firstProfile input, #firstProfile select{
+    padding: 10px;
+    border: .5px solid var(--colorTwo);
+    border-radius: 15px;
+    width: 15rem;
+    
+}
+
+#firstProfile button{
+    font-size: 1.5rem;
+    padding: 8px;
+    margin: 5px;
+    background-color: var(--colorThree);
+    border: 1px solid var(--colorTwo);
+    border-radius: 10px;
+}
+
+#firstProfile button:hover{
+    background-color: var(--colorFour);
+    color: var(--colorFive);
+}
+
+/*current driver styling*/
+
+#nextProfile {
+    margin: auto;
+    padding: 20px;
+    background-color: var(--colorThree);
+    border: 3px solid var(--colorOne);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#nextProfile img {
+    padding: 10px;
+    text-align: center;
+}
+
+#nextProfile p {
+    font-size: 1.5rem;
+}
+
+#nextProfile ul {
+    font-size: 1.6rem;
+}
+
+#nextProfile li {
+    list-style-type: none;
+}
+
+#nextProfile button {
+    font-size: 1.5rem;
+    padding: 8px;
+    margin: auto;
+    background-color: var(--colorOne);
+    border: 2px solid var(--colorTwo);
+    border-radius: 10px;
+}
+
+#nextProfile button:hover {
+    background-color: var(--colorFour);
+    color: var(--colorFive);
+}
+

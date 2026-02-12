@@ -1,4 +1,32 @@
 @media only screen and (min-width: 35rem) {
+    h1 {
+    color: var(--colorFour);
+    padding: 5px;
+    font-size: 2.5rem;
+    text-align: center;
+    }
 
+    #firstProfile{
+        text-align: left;
+    }
+
+    #nextProfile img{
+        padding: 10px;
+        width: 500px;
+        height: 500px;
+        margin: 0 0 0 6rem;
+    }
+
+    #nextProfile p {
+        font-size: 2rem;
+    }
+
+    #nextProfile ul{
+        font-size: 2.3rem;
+    }
+
+    #nextProfile button{
+        font-size: 2rem;
+    }
     
 } /* end media query*/
