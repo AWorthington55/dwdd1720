@@ -1,4 +1,4 @@
-const form = document.querySelector('#driverForm');
+
 
 function loadDriverProfile() {
     const first = localStorage.getItem('driver-first');
@@ -20,7 +20,7 @@ function loadDriverProfile() {
 
     // Now run your driver-specific logic again
 }
-
+const form = document.querySelector('#driverForm');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
