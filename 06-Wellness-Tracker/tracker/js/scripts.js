@@ -1,5 +1,27 @@
 const form = document.querySelector('#driverForm');
 
+function loadDriverProfile() {
+    const first = localStorage.getItem('driver-first');
+    const last = localStorage.getItem('driver-last');
+    const driverName = localStorage.getItem('driver-name');
+    const driverValue = localStorage.getItem('driver-value');
+
+    if (!first) return; // nothing saved yet
+
+    document.querySelector('#firstProfile').className = "hideDriver";
+    document.querySelector('#nextProfile').className = "showDriver";
+
+    document.querySelector('#first').textContent = first;
+    document.querySelector('#last').textContent = last;
+    document.querySelector('#driver').textContent = driverName;
+    document.querySelector('#driverList').textContent = driverName;
+    document.querySelector('#driverData').textContent = driverName;
+    document.querySelector('#icon').src = driverValue;
+
+    // Now run your driver-specific logic again
+}
+
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     let firstName = document.querySelector('input[name="first"]');
@@ -310,7 +332,11 @@ form.addEventListener('submit', (e) => {
         }
     }
 
-    const deleteDriver = document.querySelector('#newDriver');
+   
+});
+
+
+ const deleteDriver = document.querySelector('#newDriver');
     deleteDriver.addEventListener('click', () =>{
         localStorage.removeItem('driver-first');
         localStorage.removeItem('driver-last');
@@ -319,8 +345,28 @@ form.addEventListener('submit', (e) => {
         localStorage.removeItem('driver-team');
         location.reload();
     });
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const savedDriver = localStorage.getItem('driver-first');
+
+    if (savedDriver) {
+        // Hide form
+        document.querySelector('#firstProfile').className = "hideDriver";
+
+        // Show driver profile
+        document.querySelector('#nextProfile').className = "showDriver";
+
+        // Load saved profile data
+        loadDriverProfile();
+    } else {
+        // Show form
+        document.querySelector('#firstProfile').className = "showDriver";
+
+        // Hide profile
+        document.querySelector('#nextProfile').className = "hideDriver";
+    }
+
 });
-
-
 
 
