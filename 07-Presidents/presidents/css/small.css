@@ -4,3 +4,60 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+:root{
+    font-family: "Krub", sans-serif;
+    --colorOne: #000000;
+    --colorTwo: #A1FCDF;
+    --colorThree: #FFD23F;
+    --colorFour: #774E24;
+    --colorFive: #EC4E20;
+}
+
+main{
+    padding: 20px;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cards figure{
+    margin: 15px 2%;
+    padding: 10px;
+    flex-basis: 96%;
+    border: dashed var(--colorFour) 3px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--colorTwo);
+    box-shadow: 5px 5px 5px 5px #74b29e;
+}
+
+#cards h2{
+    font-size: 1.5rem;
+    background-color: var(--colorFive);
+    padding: 20px;
+    color: var(--colorOne);
+    border-radius: 10px;
+    font-style: italic;
+}
+
+#cards img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    background-color: var(--colorThree);
+    margin: auto;
+    color: var(--colorOne);
+    font-size: 2rem;
+    padding: 20px;
+}
+
+#cards figcaption{
+    font-size: 1.3rem;
+    margin: 1.5rem;
+    color: var(--colorOne);
+}
