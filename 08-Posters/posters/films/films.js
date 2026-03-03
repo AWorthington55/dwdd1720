@@ -56,7 +56,7 @@ export const films = [
         ],
         "created": "2014-12-10T14:23:31.880000Z",
         "edited": "2015-04-11T09:46:52.774897Z",
-        "url": "https://swapi.co/api/films/1/"
+        "url": "1.webp"
     },
     {
         "title": "Attack of the Clones",
@@ -156,7 +156,7 @@ export const films = [
         ],
         "created": "2014-12-20T10:57:57.886000Z",
         "edited": "2015-04-11T09:45:01.623982Z",
-        "url": "https://swapi.co/api/films/5/"
+        "url": "2.webp"
     },
     {
         "title": "The Phantom Menace",
@@ -246,7 +246,7 @@ export const films = [
         ],
         "created": "2014-12-19T16:52:55.740000Z",
         "edited": "2015-04-11T09:45:18.689301Z",
-        "url": "https://swapi.co/api/films/4/"
+        "url": "3.webp"
     },
     {
         "title": "Revenge of the Sith",
@@ -359,7 +359,7 @@ export const films = [
         ],
         "created": "2014-12-20T18:49:38.403000Z",
         "edited": "2015-04-11T09:45:44.862122Z",
-        "url": "https://swapi.co/api/films/6/"
+        "url": "4.webp"
     },
     {
         "title": "Return of the Jedi",
@@ -434,7 +434,7 @@ export const films = [
         ],
         "created": "2014-12-18T10:39:33.255000Z",
         "edited": "2015-04-11T09:46:05.220365Z",
-        "url": "https://swapi.co/api/films/3/"
+        "url": "5.webp"
     },
     {
         "title": "The Empire Strikes Back",
@@ -495,7 +495,7 @@ export const films = [
         ],
         "created": "2014-12-12T11:26:24.656000Z",
         "edited": "2017-04-19T10:57:29.544256Z",
-        "url": "https://swapi.co/api/films/2/"
+        "url": "6.webp"
     },
     {
         "title": "The Force Awakens",
@@ -532,6 +532,6 @@ export const films = [
         ],
         "created": "2015-04-17T06:51:30.504780Z",
         "edited": "2015-12-17T14:31:47.617768Z",
-        "url": "https://swapi.co/api/films/7/"
+        "url": "7.webp"
     }
 ]
