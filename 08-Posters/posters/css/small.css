@@ -4,3 +4,47 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+.posterGrid div {
+    background-color: red;
+}
+
+.posterGrid div h1{
+    color: orange;
+}
+
+.posterList div {
+    background-color: green;
+}
+
+.posterList div h1{
+    color: yellow;
+}
+
+/*switching buttons*/
+
+main.posterGrid #red{
+    display: none;
+}
+
+main.posterGrid #green{
+    display: block;
+}
+
+main.posterList #green{
+    display: none;
+}
+
+main.posterList #red{
+    display: block;
+}
+
+main.posterGrid .information{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+
+}
+
+main.posterList .information{
+    display: grid;
+    grid-template-columns: 1.5fr;
+}
