@@ -1,3 +1,130 @@
 @media only screen and (min-width: 60rem) {
+header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--colorFour);
+}
+
+header img{
+    margin: 1rem;
+}
+
+header h1{
+    text-align: center;
+    color: white;
+}
+
+footer{
+    background-color: var(--colorFour);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/*switching buttons*/
+
+main.posterGrid #red{
+    display: none;
+}
+
+main.posterGrid #green{
+    display: block;
+}
+
+main.posterList #green{
+    display: none;
+}
+
+main.posterList #red{
+    display: block;
+}
+
+main.posterGrid .information{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+
+}
+
+main.posterList .information{
+    display: grid;
+    grid-template-columns: 1.5fr;
+}
+
+.posterGrid figure{
+    margin: 2rem;
+    padding: auto;
+    width: 28rem;
+    background-color: var(--colorOne);
+    text-align: center;
+    border: 4px solid var(--colorThree);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #333333;
+}
+
+.posterGrid figure img{
+    width: 26rem;
+    height: 24rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.posterGrid figure h2{
+    background-color: var(--colorThree);
+    margin: auto;
+    padding: 1rem;
+    font-size: 1.7rem;
+}
+
+.posterGrid figure p{
+    font-size: 1.3rem;
+    color: var(--colorTwo);
+    margin: auto;
+    padding: 1rem;
+}
+/*end grid styling*/
+
+/*start list styling*/
+
+.posterList figure {
+    display: grid;
+    grid-template-columns: 10rem 1fr; /* Image on left, text on right */
+    gap: 1rem; /* spacing between image and text */
+    align-items: start;
+    width: 100%;
+    height: 26rem;
+    background-color: var(--colorThree);
+    border: 4px solid var(--colorOne);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #333333;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.posterList figure img {
+    width: 16rem;
+    height: 18rem;
+    border-radius: 10px;
+    grid-column: 1;
+} 
+
+.posterList figure h2 {
+    margin: 0;
+    padding: 0.5rem 0;
+    width: 100%;
+    grid-column: 2; 
+    background-color: var(--colorOne);
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
+.posterList figure p {
+    margin: 0;
+    padding: 0.5rem 0;
+    grid-column: 2; 
+    font-size: 1.3rem;
+    color: var(--colorTwo);
+    text-align: left;
+    padding: 1rem;
+}
 
 } /* end media query*/

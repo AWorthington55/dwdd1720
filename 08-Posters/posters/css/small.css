@@ -3,23 +3,28 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-.posterGrid div {
-    background-color: red;
+:root{
+    --colorOne: #9FFCDF;
+    --colorTwo: #333333;
+    --colorThree: #F6AE2D;
+    --colorFour: #C64191;
+    font-family:"Glegoo", sans-serif;
 }
 
-.posterGrid div h1{
-    color: orange;
+header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--colorFour);
 }
 
-.posterList div {
-    background-color: green;
+header img{
+    margin: 1rem;
 }
 
-.posterList div h1{
-    color: yellow;
+header h1{
+    text-align: center;
+    color: white;
 }
-
 /*switching buttons*/
 
 main.posterGrid #red{
@@ -40,11 +45,43 @@ main.posterList #red{
 
 main.posterGrid .information{
     display: grid;
-    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-columns: 3fr 3fr 3fr;
 
 }
 
 main.posterList .information{
     display: grid;
     grid-template-columns: 1.5fr;
+}
+
+.posterGrid figure{
+    margin: 1rem;
+    padding: auto;
+    width: 28rem;
+    background-color: var(--colorOne);
+    text-align: center;
+    border: 4px solid var(--colorThree);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #333333;
+}
+
+.posterGrid figure img{
+    width: 26rem;
+    height: 24rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.posterGrid figure h2{
+    background-color: var(--colorThree);
+    margin: auto;
+    padding: 1rem;
+    font-size: 1.7rem;
+}
+
+.posterGrid figure p{
+    font-size: 1.3rem;
+    color: var(--colorTwo);
+    margin: aut;
+    padding: 1rem;
 }

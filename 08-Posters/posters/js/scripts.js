@@ -8,12 +8,18 @@ for (let x = 0; x < films.length; x++) {
     let posterImg = document.createElement('img')
     posterImg.setAttribute('src', posterLink+films[x].url)
     posterImg.setAttribute('alt', films[x].title)
-    let posterData = document.createElement('p')
-    posterData.innerHTML = `Director: ${films[x].director} <br> Producer: ${films[x].producer} <br> Release Date: ${films[x].release_date}`
+    let posterDirector = document.createElement('p')
+    posterDirector.textContent = `Director: ${films[x].director}`
+    let posterProducer = document.createElement('p')
+    posterProducer.textContent = `Producer: ${films[x].producer}`
+    let posterRelease = document.createElement('p')
+    posterRelease.textContent = `Release Date: ${films[x].release_date}`
     let posterFigure = document.createElement('figure')
     posterFigure.appendChild(posterInfo)
     posterFigure.appendChild(posterImg)
-    posterFigure.appendChild(posterData)
+    posterFigure.appendChild(posterDirector)
+    posterFigure.appendChild(posterProducer)
+    posterFigure.appendChild(posterRelease)
     newPoster.appendChild(posterFigure)
 } // end of for loop
 

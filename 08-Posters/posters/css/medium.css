@@ -1,4 +1,77 @@
 @media only screen and (min-width: 35rem) {
+header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--colorFour);
+}
 
+header img{
+    margin: 1rem;
+}
+
+header h1{
+    text-align: center;
+    color: white;
+}
+/*switching buttons*/
+
+main.posterGrid #red{
+    display: none;
+}
+
+main.posterGrid #green{
+    display: block;
+}
+
+main.posterList #green{
+    display: none;
+}
+
+main.posterList #red{
+    display: block;
+}
+
+main.posterGrid .information{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+
+}
+
+main.posterList .information{
+    display: grid;
+    grid-template-columns: 1.5fr;
+}
+
+.posterGrid figure{
+    margin: 1rem;
+    padding: auto;
+    width: 28rem;
+    background-color: var(--colorOne);
+    text-align: center;
+    border: 4px solid var(--colorThree);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #333333;
+}
+
+.posterGrid figure img{
+    width: 26rem;
+    height: 24rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.posterGrid figure h2{
+    background-color: var(--colorThree);
+    margin: auto;
+    padding: 1rem;
+    font-size: 1.7rem;
+}
+
+.posterGrid figure p{
+    font-size: 1.3rem;
+    color: var(--colorTwo);
+    margin: aut;
+    padding: 1rem;
+}
     
 } /* end media query*/
