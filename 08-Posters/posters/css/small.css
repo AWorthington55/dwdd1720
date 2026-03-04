@@ -70,7 +70,6 @@ main.posterList .information{
 
 .posterGrid figure{
     margin-left: .6rem;
-    padding: auto;
     width: 19rem;
     background-color: var(--colorOne);
     text-align: center;
