@@ -1,1 +1,2 @@
-console.log("I am connected");
+import {people} from '../data/people.js'
+console.log(people)
