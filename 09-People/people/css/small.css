@@ -4,6 +4,18 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+:root{
+    --maleColor: #0075A2;
+    --femaleColor: #F15BB5;
+    --otherColor: #791E94;
+    --colorOne: #D4D2D5;
+    --colorTwo: #2E86AB;
+    --colorThree: #3E5641;
+    --colorFour: #E9724C;
+    --colorFive: #1A090D;
+    font-family: "Saira", sans-serif;
+}
+
 #info{
     display: flex;
     flex-wrap: wrap;
@@ -13,26 +25,72 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     margin: 10px;
     padding: 0;
     width: 150px;
-    border-radius: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px var(--colorFive);
 }
 
 #info figure img{
     width: 100%;
-    border-radius: 3px;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 
 #info figure figcaption{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    background-color: white;
 }
 
 #info figure.boy{
-    border: 5px solid blue;
+    border: 5px solid var(--maleColor);
+    color: var(--maleColor);
 }
 
 #info figure.girl{
-    border: 5px solid pink;
+    border: 5px solid var(--femaleColor);
+    color: var(--femaleColor);
 }
 
 #info figure.other{
-    border: 5px solid orange;
+    border: 5px solid var(--otherColor);
+    color: var(--otherColor);
+}
+
+header{
+    background-color: var(--colorThree);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+button{
+    text-align: center;
+    background-color: var(--colorTwo);
+    color: white;
+    border: 4px solid var(--colorFour);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    display: block;
+    width: 96%;
+}
+
+nav{
+    background-color: var(--colorFive);
+    padding: 5px;
+}
+
+body{
+    background-color: var(--colorOne);
+}
+
+footer{
+    background-color: var(--colorThree);
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
