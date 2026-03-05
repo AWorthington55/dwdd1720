@@ -6,6 +6,11 @@ function showPeople (x) {
     x.forEach(person => {
     const personFigure = document.createElement('figure')
     const personImg = document.createElement('img')
+    const explodedArray = person.url.split('/')
+    console.log(explodedArray)
+    const personNumber = explodedArray[5]
+    personImg.src=`//resources.dgmuvu.com/characters/${personNumber}.jpg`
+    personImg.alt = person.name
     const personCaption = document.createElement('figcaption')
     personCaption.textContent = person.name
     personFigure.appendChild(personImg)
