@@ -4,9 +4,65 @@ const senatorData = document.querySelector('#data')
 console.log(senators)
 //navigation here
 
+//create all senators button
+const senatorsAll = document.createElement('button')
+senatorsAll.textContent = "All Senators"
+senatorsAll.addEventListener('click', () => {senatorsShow(senators)})
+senatorNav.appendChild(senatorsAll)
+
+//create Republican senators button
+const senatorsRepublican = document.createElement('button')
+senatorsRepublican.textContent = "Republican Senators"
+senatorsRepublican.addEventListener('click', () => {
+    const republicans = senators.filter(senator => senator.party === 'R')
+    senatorsShow(republicans)
+})
+
+senatorNav.appendChild(senatorsRepublican)
+
+//create democrat senators button
+const senatorsDemocrat = document.createElement('button')
+senatorsDemocrat.textContent = "Democrat Senators"
+senatorsDemocrat.addEventListener('click', () => {
+    const democrats = senators.filter(senator => senator.party === 'D')
+    senatorsShow(democrats)
+})
+
+senatorNav.appendChild(senatorsDemocrat)
+
+//create other senator button
+const senatorsOther = document.createElement('button')
+senatorsOther.textContent = "Other Senators"
+senatorsOther.addEventListener('click', () => {
+    const other = senators.filter(senator => senator.party != "R" && senator.party != "D")
+    senatorsShow(other)
+})
+
+senatorNav.appendChild(senatorsOther)
+
+//create male senators button
+const senatorsMale = document.createElement('button')
+senatorsMale.textContent = "Male Senators"
+senatorsMale.addEventListener('click', () => {
+    const males = senators.filter(senator => senator.gender === 'M')
+    senatorsShow(males)
+})
+
+senatorNav.appendChild(senatorsMale)
+
+//create female senators button
+const senatorsFemale = document.createElement('button')
+senatorsFemale.textContent = "Female Senators"
+senatorsFemale.addEventListener('click', () => {
+    const females = senators.filter(senator => senator.gender === 'F')
+    senatorsShow(females)
+})
+
+senatorNav.appendChild(senatorsFemale)
 
 //function here
 function senatorsShow (x) {
+   senatorData.textContent = ""
    x.forEach(senator => {
     const senatorFigure = document.createElement('figure')
 
@@ -25,7 +81,18 @@ function senatorsShow (x) {
     const senatorOtherData = document.createElement('figcaption')
     senatorOtherData.textContent = `${senator.party} from ${senator.state}`
 
-
+    //assign parties to senators
+    switch (senator.party) {
+        case "R":
+        senatorFigure.className = "republican"
+        break;
+        case "D":
+        senatorFigure.className = "democrat"
+        break;
+        case "F":
+        default:
+        senatorFigure.className = "Other"
+    }//end of switch case
 
     // showing the data
    
