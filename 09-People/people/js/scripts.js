@@ -25,14 +25,10 @@ otherBtn.addEventListener('click', () => {
     showPeople(otherArray)
 })
 
-
-
-
 navigation.appendChild(allBtn)
 navigation.appendChild(girlBtn)
 navigation.appendChild(boyBtn)
 navigation.appendChild(otherBtn)
-
 
 function showPeople (x) {
     peopleInfo.textContent = ""
