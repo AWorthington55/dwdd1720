@@ -4,6 +4,14 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+:root{
+    --colorOne: #402E2A;
+    --colorTwo: #E2DCDE;
+    --colorThree: #A03E99;
+    --colorFour: #767522;
+    font-family: "Titillium Web", sans-serif;
+}
+
 #data {
     display: flex;
     flex-wrap: wrap;
@@ -51,11 +59,52 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 #data figure figcaption{
     text-align: center;
     height: 1rem;
-    display: flex;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
 #data figure h2{
     text-align: center;
-    color: black;
+    font-size: 30px;
+
 }
 
+header{
+    background-color: var(--colorFour);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+nav{
+    background-color: var(--colorThree);
+    padding: 15px;
+
+}
+
+button {
+    text-align: center;
+    background-color: var(--colorOne);
+    color: white;
+    border: 2px solid var(--colorTwo);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    display: block;
+    width: 96%;
+}
+
+footer{
+    background-color: var(--colorFour);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    background-color: var(--colorTwo);
+}
+
+h1{
+    font-size: 40px;
+}

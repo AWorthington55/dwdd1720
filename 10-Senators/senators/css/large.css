@@ -9,4 +9,27 @@
     flex-basis: 29%;
 }
 
+#data figure figcaption{
+    text-align: center;
+    height: 1rem;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#data figure h2{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+
+}
+
+h1{
+    font-size: 40px;
+}
+
+button{
+    font-size: 20px;
+}
+
+
 } /* end media query*/
