@@ -10,21 +10,38 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 }
 
 #data figure {
-    margin: 10px;
+    margin: 10px 2%;
     padding: 0;
-    width: 150px;
+    flex-basis: 100%;
+    border-radius: 10px;
 }
+
+#data figure img{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    display: block;
+    
+}
+
 
 #data figure.republican {
     border: 5px solid red;
+    color: red;
+    box-shadow: 10px 5px 5px rgb(155, 0, 0);
 }
 
 #data figure.democrat {
     border: 5px solid blue;
+    color: blue;
+    box-shadow: 10px 5px 5px rgb(0, 0, 139);
 }
 
 #data figure.Other {
     border: 5px solid grey;
+    color: grey;
+    box-shadow: 10px 5px 5px rgb(73, 73, 73);
 }
 
 #data figure img {
@@ -33,9 +50,12 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 #data figure figcaption{
     text-align: center;
+    height: 1rem;
+    display: flex;
 }
 
 #data figure h2{
     text-align: center;
+    color: black;
 }
 

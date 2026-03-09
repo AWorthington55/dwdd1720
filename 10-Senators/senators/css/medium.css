@@ -1,4 +1,9 @@
 @media only screen and (min-width: 35rem) {
+#data figure {
+    margin: 10px 2%;
+    padding: 0;
+    flex-basis: 46%;
+}
 
     
 } /* end media query*/

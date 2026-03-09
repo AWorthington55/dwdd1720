@@ -1,3 +1,12 @@
 @media only screen and (min-width: 60rem) {
+    #data {
+    display: flex;
+    flex-wrap: wrap;
+}
+    #data figure {
+    margin: 10px 2%;
+    padding: 0;
+    flex-basis: 29%;
+}
 
 } /* end media query*/

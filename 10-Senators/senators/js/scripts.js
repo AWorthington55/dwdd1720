@@ -81,6 +81,9 @@ function senatorsShow (x) {
     const senatorOtherData = document.createElement('figcaption')
     senatorOtherData.textContent = `${senator.party} from ${senator.state}`
 
+    const senatorGender = document.createElement('figcaption')
+    senatorGender.textContent = `Gender: ${senator.gender}`
+
     //assign parties to senators
     switch (senator.party) {
         case "R":
@@ -99,6 +102,7 @@ function senatorsShow (x) {
     senatorFigure.appendChild(senatorCaption)
     senatorFigure.appendChild(senatorPhoto)
     senatorFigure.appendChild(senatorBirthday)
+    senatorFigure.appendChild(senatorGender)
     senatorFigure.appendChild(senatorOtherData)
 
     //send data to HTML
