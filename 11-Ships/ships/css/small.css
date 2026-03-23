@@ -4,3 +4,64 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+:root{
+    font-family: "Trispace", sans-serif;
+    --colorOne: #7D84B2;
+    --colorTwo: #8E9DCC;
+    --colorThree: #F4FFF8;
+    --colorFour: #5D2E46;
+    --colorFive: #1E212B;
+}
+
+body {
+    background-color: var(--colorFour);
+}
+
+header h1{
+    text-align: center;
+    color: var(--colorThree);
+    background-color: var(--colorFive);
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+nav button {
+    width: 100%;
+    background-color: var(--colorOne);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+nav button:hover{
+    background-color: var(--colorTwo);
+}
+
+
+main figure{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+main figure img{
+    width: 100%;
+    max-width: 600px;
+}
+
+main figure figcaption{
+    color: var(--colorThree);
+}
+
+footer{
+    color: var(--colorThree);
+    text-align: center;
+    background-color: var(--colorFive);
+    margin: 0;
+    padding: 10px;
+}
