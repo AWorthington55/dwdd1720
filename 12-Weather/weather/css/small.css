@@ -4,14 +4,27 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+:root{
+    font-family: "Datatype", sans-serif;
+    --colorOne: #f298b2;
+    --colorTwo: #2E4057;
+    --colorThree: #CAA8F5;
+    --colorFour: #f1c40f;
+    --colorFive: #AFE0CE;
+}
+
 body{
-    background-color: lightcyan;
+    background-color: var(--colorFive);
 }
 
 header{
     display: grid;
     grid-template-columns: auto 42px;
-    background-color: orange;
+    background-color: var(--colorFour);
+}
+
+header span{
+    font-size: 1.5rem;
 }
 
 header span:nth-child(2){
@@ -34,18 +47,44 @@ aside.showWeather {
     left: 10px;
     right: 10px;
     padding: 1rem 2vw;
-    border-radius: 10px;
+    border: 5px solid grey;
+    border-radius: 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(202, 168, 245, 0.95);
     color: black;
+    font-size: 1.5rem;
+}
+
+#zipcodeNew{
+    border-radius: 10px;
+    border: 3px solid var(--colorTwo);
+    max-width: 20rem;
+    margin: 5px;
+}
+
+#zipcodeSubmit{
+    border-radius: 10px;
+    border: 3px solid var(--colorTwo);
+    background-color: var(--colorFive);
+
+}
+
+section{
+    margin: 20px;
+    text-align: center;
+    border: 5px solid var(--colorTwo);
+    font-size: 1.5rem;
+    background-color: var(--colorOne);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
 }
 
 footer{
-    background-color: lime;
+    background-color: var(--colorFour);
     text-align: center;
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 1rem;
-    font-size: .9rem;
+    font-size: 1.2rem;
 }
