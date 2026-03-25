@@ -4,3 +4,28 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+body{
+
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto 42px;
+    background-color: orange;
+}
+
+header span:nth-child(2){
+    padding: .5rem;
+}
+
+#city{
+    padding: .5rem;
+}
+
+aside{
+    display: none;
+}
+
+footer{
+    background-color: lime;
+}
