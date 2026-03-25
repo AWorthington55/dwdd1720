@@ -1,5 +1,11 @@
 //write the default zipcode
-let zip = "84062"
+let zip = localStorage.getItem('myZipcode')
+if (zip == null) {
+    let zipcodeDefault = "84062"
+    localStorage.setItem('myZipcode', zipcodeDefault)
+    zip = zipcodeDefault
+} //end if
+console.log(zip)
 
 //set the path to the API for the weather
 const myKey = "9bbf76d4e9e7288dc6482d0d1f5797bc"
