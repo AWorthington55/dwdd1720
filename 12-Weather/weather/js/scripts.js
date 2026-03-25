@@ -9,7 +9,6 @@ if (zip == null) {
     localStorage.setItem('myZipcode', zipcodeDefault)
     zip = zipcodeDefault
 } //end if
-console.log(zip)
 
 //set the path to the API for the weather
 const myKey = "9bbf76d4e9e7288dc6482d0d1f5797bc"
@@ -25,8 +24,6 @@ fetch(myAPI)
 
 //function for displaying the current weather
 function weatherCurrent(results){
-    console.log(results)
-    console.log(results.weather[0].icon)
     //current date info
     const weatherDate = document.createElement('p')
     weatherDate.className = "date"
@@ -71,7 +68,24 @@ function weatherCurrent(results){
     
 }//end of function
 
-
 //ask for new zipcode
+const weatherAside = document.querySelector('aside')
+const weatherSettings = document.querySelector('#settings')
+weatherSettings.addEventListener('click', () => {
+    weatherAside.classList.toggle('showWeather')
+})
+
+//set new zipcode
+const weatherButton = document.querySelector('#zipcodeSubmit')
+weatherButton.addEventListener('click', () => {
+    weatherAside.className = ''
+    let newZipcode = document.querySelector('#zipcodeNew').value
+    localStorage.setItem('myZipcode', newZipcode)
+    location.reload()
+})
 
 //validating data for the zipcode
+weatherInput = document.querySelector('#zipcodeNew')
+weatherInput.addEventListener('input', () => {
+    weatherInput.value = weatherInput.value.slice(0, 5)
+})
