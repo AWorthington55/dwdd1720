@@ -13,6 +13,9 @@ friends.forEach(friend => {
     storeNav.appendChild(storeBtn)
 })
 
+//create month array
+const monthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
 
 function showFriend(friend) {
     console.log(friend)
@@ -24,4 +27,14 @@ function showFriend(friend) {
     let storeBirthday = document.createElement('p')
     let storeEmployment = document.createElement('p')
     let storeHobbies = document.createElement('ul')
+
+    //adding stuff to HTML elements
+    storeName.textContent = `${friend.first} ${friend.last}`
+    storePhoto.src = `../friend-images/${friend.photo}`
+    storePhoto.alt = friend.first
+    storeEmployment.textContent = `Employment: ${friend.employment}`
+    storeBirthday.textContent = `Birthday: ${monthName[(friend.bornMonth)-1]} ${friend.bornDay}, ${friend.bornYear}`
+
+    //adding information to viewer
+    storeView.appendChild(storeBirthday)
 }//end function
