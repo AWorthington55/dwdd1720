@@ -34,7 +34,15 @@ function showFriend(friend) {
     storePhoto.alt = friend.first
     storeEmployment.textContent = `Employment: ${friend.employment}`
     storeBirthday.textContent = `Birthday: ${monthName[(friend.bornMonth)-1]} ${friend.bornDay}, ${friend.bornYear}`
+    
+    //hobbies list
+    friend.hobbies.forEach(hobby => {
+        let oneHobby = document.createElement('li')
+        oneHobby.textContent = hobby
+        storeHobbies.appendChild(oneHobby)
+    })
 
     //adding information to viewer
     storeView.appendChild(storeBirthday)
+    storeView.appendChild(storeHobbies)
 }//end function
